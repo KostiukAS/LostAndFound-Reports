@@ -1,0 +1,27 @@
+.mainTitle {
+    text-align: center;
+}
+
+.myPhoto {
+    float: right;
+    width: 7%;
+}
+
+.labButton {
+    width: 150px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#report-list {
+    float: left;
+    margin-right: 20px;
+}
+
+li {
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
