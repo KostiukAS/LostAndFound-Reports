@@ -21,15 +21,121 @@
         <a href="Report2.html" data-role="button" data-inline="true"><button class="labButton">Лабораторна робота №2</button></a>
         <a href="Report3.html" data-role="button" data-inline="true"><button class="labButton">Лабораторна робота №3</button></a>
         <a href="Report4.html" data-role="button" data-inline="true"><button class="labButton">Лабораторна робота №4</button></a>
-        <a href="Report.html" data-role="button" data-inline="true"><button class="labButton">Лабораторна робота №5</button></a>
-        <a href="Report.html" data-role="button" data-inline="true"><button class="labButton">Лабораторна робота №6</button></a>
-        <a href="Report.html" data-role="button" data-inline="true"><button class="labButton">Лабораторна робота №7</button></a>
-        <a href="Report.html" data-role="button" data-inline="true"><button class="labButton">Лабораторна робота №8</button></a>
-        <a href="Report.html" data-role="button" data-inline="true"><button class="labButton">Лабораторна робота №9</button></a>
+        <a href="Report5.html" data-role="button" data-inline="true"><button class="labButton">Лабораторна робота №5</button></a>
+        <a href="Report6.html" data-role="button" data-inline="true"><button class="labButton">Лабораторна робота №6</button></a>
+        <a href="Report7.html" data-role="button" data-inline="true"><button class="labButton">Лабораторна робота №7</button></a>
+        <a href="Report8.html" data-role="button" data-inline="true"><button class="labButton">Лабораторна робота №8</button></a>
+        <a href="Report9.html" data-role="button" data-inline="true"><button class="labButton">Лабораторна робота №9</button></a>
         <br>
 
         <h1>Лабораторна робота №4</h1>
-        <h2></h2>
+
+        <ul id="report-list">
+            <li id="list-1">Тема, мета, місце розташування лаби 4 та звітнього документу</li>
+            <li id="list-2">Завдання</li>
+            <li>
+                <ul>
+                    <li id="list-2.1">Мобільна версія</li>
+                    <li id="list-2.2">Планшетна версія</li>
+                    <li id="list-2.3">Десктопна версія</li>
+                </ul>
+            </li>
+            <li id="list-3">Висновки</li>
+        </ul>
+
+        <div id="report-1">
+            <h2>Тема, мета, місце розташування лаби 4 та звітнього документу</h2>
+            <h3>Тема:</h3>
+            <p>АДАПТИВНА ВЕРСТКА. МЕДІА-ЗАПИТИ. МЕТАТЕГ VIEWPORT.
+                СТРАТЕГІЯ MOBILE FIRST.
+            </p>
+            <h3>Мета:</h3>
+            <p>Адаптивна верстка. Медіа-запити. Медіа-типи. Медіа-функції.Метатег
+                viewport. Інструменти розробника. Стратегія Mobile First.
+            </p>
+            <h3>Місце розташування лаби №4 (посилання на GitHub):</h3>
+            <a href="https://github.com/KostiukAS/LostAndFound-WEB" target="_blank">https://github.com/KostiukAS/LostAndFound-WEB</a>
+            <h3>Місце розташування звітнього документу (посилання на GitHub):</h3>
+            <a href="https://github.com/KostiukAS/LostAndFound-Reports" target="_blank">https://github.com/KostiukAS/LostAndFound-Reports</a>
+        </div>
+
+        <div id="report-2" style="display: none;">
+        <h2>Завдання</h2>
+
+        <div id="report-2.1">
+            <h3>Мобільна версія:</h3>
+            <img src=".\images\Lab4-mobile.png" alt="Mobile version">
+        </div>
+
+        <div id="report-2.2">
+            <h3>Планшетна версія:</h3>
+            <img src=".\images\Lab4-ipad.png" alt="IPad version">
+        </div>
+
+        <div id="report-2.3">
+            <h3>Десктопна версія:</h3>
+            <img src=".\images\Lab4-desktop.png" alt="Desktop version" style="width: 90%;">
+        </div>
+        </div>
+
+        <div id="report-3" style="display: none;">
+        <h2>Висновки:</h2>
+        <p>Виконуючи дану лабораторну роботу я придбав практичні навички роботи з адаптивною версткою сторінок засобами CSS, 
+            навчився використовувати медіа-запити, медіа-типи, інструменти розробника, метатег VIEWPORT, 
+            дізнався що таке стратегія MOBILE FIRST.
+        </p>
+        </div>
 
     </body>
+
+    <script>
+        document.getElementById("list-1").onclick = function() {
+            document.getElementById("report-1").style.display = "block";
+            document.getElementById("report-2").style.display = "none";
+            document.getElementById("report-3").style.display = "none";
+        }
+
+        document.getElementById("list-2").onclick = function() {
+            document.getElementById("report-1").style.display = "none";
+            document.getElementById("report-2").style.display = "block";
+            document.getElementById("report-2.1").style.display = "block";
+            document.getElementById("report-2.2").style.display = "block";
+            document.getElementById("report-2.3").style.display = "block";
+            document.getElementById("report-3").style.display = "none";
+        }
+
+        document.getElementById("list-2.1").onclick = function() {
+            document.getElementById("report-1").style.display = "none";
+            document.getElementById("report-2").style.display = "block";
+            document.getElementById("report-2.1").style.display = "block";
+            document.getElementById("report-2.2").style.display = "none";
+            document.getElementById("report-2.3").style.display = "none";
+            document.getElementById("report-3").style.display = "none";
+        }
+
+        document.getElementById("list-2.2").onclick = function() {
+            document.getElementById("report-1").style.display = "none";
+            document.getElementById("report-2").style.display = "block";
+            document.getElementById("report-2.1").style.display = "none";
+            document.getElementById("report-2.2").style.display = "block";
+            document.getElementById("report-2.3").style.display = "none";
+            document.getElementById("report-3").style.display = "none";
+        }
+
+        document.getElementById("list-2.3").onclick = function() {
+            document.getElementById("report-1").style.display = "none";
+            document.getElementById("report-2").style.display = "block";
+            document.getElementById("report-2.1").style.display = "none";
+            document.getElementById("report-2.2").style.display = "none";
+            document.getElementById("report-2.3").style.display = "block";
+            document.getElementById("report-3").style.display = "none";
+        }
+
+        document.getElementById("list-3").onclick = function() {
+            document.getElementById("report-1").style.display = "none";
+            document.getElementById("report-2").style.display = "none";
+            document.getElementById("report-3").style.display = "block";
+        }
+    </script>
+
 </html>
